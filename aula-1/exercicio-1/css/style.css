@@ -6,6 +6,7 @@
 body {
     background-color: #e4d2e6; /* determina a cor de fundo de um elemento */
     font-family: 'Lato', Arial, Helvetica, sans-serif; /* determina o tipo de fonte */
+text-align: center;
 }
 
 a {
@@ -14,6 +15,7 @@ a {
 
 img {
     width: 85%; /* define o comprimento */
+
 }
 
 /* FONTS */
@@ -28,7 +30,7 @@ h2 {
 }
 
 p {
-    width: 430px;
+    
     margin-bottom: 110px;
     text-align: right;  
 }
@@ -49,9 +51,10 @@ p {
 }
 
 .section-sobre {
-   width: 960px;
+  max-width: 960px;
    margin: 0 auto; /* macete para deixar elementos block centralizados */
    margin-top: 100px;
+   
 }
 
 .sobre-conteudo__botoes {
@@ -73,3 +76,26 @@ p {
     border: 1px solid #5d1277; /* cria uma borda no elemento. Ordem de valores: grossura-da-borda tipo-da-borda cor-da-borda. */
 }
 
+/*media queries*/
+@media screen and (max-width: 800px) {
+    .sobre-conteudo, .sobre-imagem{
+        width: 100%;
+    }
+
+    h1, h2, p {
+        text-align: center;
+
+    }
+    p{
+        max-width: 430px;
+        margin: 0 auto 110px auto;
+
+    }
+    .sobre-conteudo__botoes{
+        text-align: center;
+    }
+ img{
+     width: 100%;
+     margin-top: 40px;
+ }
+}
