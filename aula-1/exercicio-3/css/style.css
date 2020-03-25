@@ -12,52 +12,57 @@ header {
     width: 100%;
     background-size: cover;
     background-position: center;
-    min-height: 180px;  
-    align-items: center;  
+    min-height: 180px;
+    align-items: center;
 }
-header div {
+
+.header-caixa {
     align-items: center;
     display: flex;
 }
-
 
 h1 {
     font-weight: bold;
     text-align: center;
     padding: 20px;
 }
+
 /* Main */
 main {
     padding: 100px;
 }
+
 .todos {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
+
 .todos div img {
     width: 250px;
-    height: 150px;   
+    height: 150px;
 }
 
 .todos:last-child {
     margin-top: 20px;
 }
 
-@media screen and (max-width:768px){ 
-    .header-caixa  {
+@media screen and (max-width:768px) {
+    .header-caixa {
         align-items: center;
         display: flex;
         flex-direction: column;
         text-align: center;
     }
-   .todos {
-       flex-wrap: wrap;
-   }
 
-   .todos:last-child{
-       margin-top: 0;
-   }
-   
+    .todos {
+        flex-wrap: wrap;
+    }
+
+    .todos:last-child {
+        margin-top: 0;
+    }
+
 
 }
